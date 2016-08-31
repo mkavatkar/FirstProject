@@ -1,3 +1,6 @@
+<!--Load stylesheet-->
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
 <!--Check if the list has question; if yes then return otherwise give message-->
 {% if latest_question_list %}
     <ul>
