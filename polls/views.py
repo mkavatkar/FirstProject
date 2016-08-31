@@ -35,6 +35,9 @@ class ResultsView(generic.DetailView):
     model = Question
     template_name = 'polls/results.html'
 
+    def get_queryset(self):
+        return Question.objects.filter(pub_date__lte=timezone.now())
+
 
 # Voting view
 def vote(request, question_id):
