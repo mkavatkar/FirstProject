@@ -5,6 +5,7 @@ from django.utils import timezone
 
 
 # Database model for Questions
+# adding a new comment
 @python_2_unicode_compatible
 class Question(models.Model):
     def __str__(self):
