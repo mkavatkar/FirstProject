@@ -4,6 +4,7 @@ from . import views
 # app specific name space
 app_name = 'polls'
 # patterns matching url for the index/
+# adding a new comment
 urlpatterns = [
     url(r'^$', views.IndexView.as_view(), name='index'),
     # ex. /polls/5/
